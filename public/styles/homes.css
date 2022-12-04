@@ -1,0 +1,475 @@
+body{
+    background: linear-gradient(49.5deg, #1B1B2C 57.92%, #3C3C73 89.34%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: row nowrap;
+    justify-content: space-between;
+    position: fixed ;   
+    height: 13rem;
+    width: 100%;
+    top: 0%;
+    flex-wrap: wrap;
+    background: linear-gradient(49.5deg, #1B1B2C 57.92%, #3C3C73 89.34%);
+    right: 0%;
+  z-index: 100;
+}
+.barra1{
+    width: 46rem;
+    height: 3rem;
+    background-color: #08F3C9;
+    position: fixed;
+    top: 2rem;
+    left: 7rem;
+}
+.banner img{
+    width: 20rem;
+    height: 12rem;
+    position: relative;
+}
+#banner .banner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: row nowrap;
+  
+}
+.banner-inf{
+    display: flex;
+    flex-direction: column;
+}
+.banner-inf h1{
+    font-family: 'Kantumruy';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 63px;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+width: 25rem;
+height: 3rem;
+display: flex;
+align-items: center;
+justify-content: center;
+
+position: relative;
+
+}
+.banner-inf h2{
+    color: #08F3C9;
+    position: relative;
+    bottom: 3rem;
+    left: 2rem;
+}
+.banner-inf input{
+    background: #514869;
+box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+width: 9rem;
+height: 1.6rem;
+position: relative;
+bottom: 3.5rem;
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 35rem;
+    
+}
+.nav li{
+    list-style: none;
+    
+   
+}
+.nav a{
+ text-decoration: none;
+ color: black;
+ font-size: 20px;   
+}
+.menu:hover{
+    font-size: 20px;
+    color: #08F3C9;
+}
+ #profile-player{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 25rem;
+ }
+ .profile{
+    display: flex;
+    flex-direction: row;
+ }
+ .profile img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 1rem;
+    
+ }
+ .profile h2{
+    margin: 1rem;
+    font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+position: relative;
+right: 1.5rem;
+bottom: -.1rem;
+ }
+.profile a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;   
+}
+.player{
+    width: 20rem;
+    height: 7rem;
+    background-color: #08F3C9;
+    border-radius: 1rem;
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.new{
+    margin: 0 auto;
+    width: 25rem;
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+    top: 15rem;
+}
+.new h1{
+    background-color: #08F3C9;
+    width: 55rem;
+    height: 1.8rem;
+    position: relative;
+    right: 15rem;
+    text-align: center;
+    font-size: 22px;
+}
+.newMusic{
+    width: 400%;
+    height: 50rem;
+    display: flex;
+}
+.newMusic input{
+    display: none;
+}
+.cardsMusic{
+    width: 25%;
+    position: relative;
+    background-color: #514869;
+    cursor: pointer;
+    margin-bottom: 5.8rem;
+    transition: 2s;
+}
+
+.cardsMusic img{
+    width: 25rem;
+    height: 15rem;
+}
+.navigation-manual{
+    position: absolute;
+    width: 25rem;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    top: 26.3rem;
+}
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #FFFFFF;
+}
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+.navigation-auto div{
+    border:  2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    position:relative;
+    bottom: 2.8rem;
+}
+.navigation-auto{
+    position: absolute;
+    width: 25rem;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+.top{
+ 
+width: 75rem;
+height: 12rem;
+display:flex;
+flex-direction: column;
+overflow: hidden;
+position: relative;
+top: 18rem;
+left: 17rem;
+padding: 3rem;
+justify-content: center;
+
+  
+}
+.container-scroll{
+    display: flex;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+   
+    
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    transition: 2.5s;
+}
+.topH1{
+    background-color: #08F3C9;
+    width: 55rem;
+    height: 1.8rem;
+   position: relative;
+   top: 20rem;
+   right: 1.7rem;
+    text-align: center;
+    font-size: 22px;
+}
+.container-scroll input{
+display: none;
+}
+.container-scroll{
+   width: 25%;
+   position: relative;
+}
+.navigation-manual-top{
+    position: absolute;
+    width:  75rem;
+    margin-top: 15rem;
+    display: flex;
+    justify-content: center;
+   
+}
+.manual-btn-scroll{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  
+}
+.manual-btn-scroll:not(:last-child){
+    margin-right: 4rem;
+}
+.manual-btn-scroll:hover{
+    background-color: #fff;
+}
+#carrosselScroll1:checked ~ .scroll{
+    margin-left: 0%;
+}
+#carrosselScroll2:checked ~ .scroll{
+    margin-left: -429%;
+}
+.card{
+    margin: 1.2rem;
+    background-color: #514869;
+}
+.card img{
+    width: 13rem;
+    height: 8rem;
+    transition: all .5s;
+    border: .0rem solid transparent;
+    background-color: #08F3C9;
+   
+}
+.card:hover{
+    zoom: 1.;
+    transition: all 0.5s;
+    cursor: pointer;
+    border: 13px solid  rgba(0, 0, 0, 0.466);
+    border-radius: 15px;
+
+}
+#recentes a{ 
+    text-decoration: none;
+    color: black;
+    font-size: 20px;   
+   }
+#recentes{
+    width: 55rem;
+    height: 1.8rem;
+    text-align: center  ;
+    right: 2rem;
+     background-color: #08F3C9;
+     position: relative;
+     top: 23rem;
+  
+}
+#recentes h1{
+    font-size: 22px;
+    position: relative;
+    bottom: 1rem;
+}
+.container-recentes{
+    width: 5rem;
+    height: 1rem;
+    display: flex; 
+    align-items: center;
+    flex-direction: row;
+    margin: 2rem;
+    position: relative;
+    left: 30rem;
+    top: 2rem;
+  
+}
+.card-recente img{
+    width: 7rem;
+    height: 5rem;
+    margin-right: .5rem;
+    transition: all .5s;
+    border: .0rem solid transparent;
+    background-color: #08F3C9;
+}
+.card-recente img:hover{
+    zoom: 1.1;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.card-recente{
+    margin: 3rem;
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+    text-align: justify;
+  
+}
+#playlist{
+    width: 15rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 35rem ;
+    right: 3rem;
+}
+.card-playlist{
+    position: relative;
+    top: 5rem;
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+    margin: 2rem;
+    right: 15rem;
+
+}
+#playlist a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;   
+   }
+   #playlist a h1{
+    width: 55rem;
+    height: 1.8rem;
+    text-align: center  ;
+    right: 3rem;
+     background-color: #08F3C9;
+     font-size: 22px;
+}
+.card-playlist img{
+    width: 7rem;
+    height: 5rem;
+    margin-right: .5rem;
+    transition: all .5s;
+    border: .0rem solid transparent;
+    background-color: #08F3C9;
+}
+.card-playlist img:hover{
+    zoom: 1.1;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+footer h1{
+    position: relative;
+    top: 41rem;
+    color: #FFFFFF;
+}
+.barra-lateral1{
+    background-color: #08F3C9;
+    position: relative;
+    top: 44rem;
+    height: 2rem;
+    width: 45rem;
+    right: 1rem;
+}
+.barra-lateral2{
+    background-color: #08F3C9;
+    position: relative;
+    height: 2rem;
+    width: 35rem;
+    top: 42.6rem;
+    left: 83.3rem;
+    
+};
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+

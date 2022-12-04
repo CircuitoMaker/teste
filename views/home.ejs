@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>Já foi Napster, The Pirate Bay, Aires, kazaa, DreaMule, agora é:</h1>
+
+
+    <h1 style="text-shadow: 1px 1px 2px black ">BeatLab</h1>
+    <h2>Streaming de Audio</h2>
+    
+    <div class="tocador">
+
+        <audio id="player" controls="controls" hidden preload="preload" >
+            <source src="/audio" type="audio/ogg">
+        </audio>
+
+
+
+
+    <div class="layoutBtns">
+        <!-- <button onclick="document.getElementById('player').play()">Play</button> -->
+        
+        <button id="playPauseBtn" onclick="playPause()">Play</button>
+        
+
+
+        <button onclick="location.href='/decrementa'" type="button"><<</button>
+        <button onclick="location.href='/incrementa'" type="button">>></button>
+
+
+        <button id="mudoBtn" onclick="mudoFunc()">Mudo OFF</button>
+
+
+    </div>
+   
+<!-- <p>document.getElementById('player').volume</p> -->
+
+
+
+</div>
+
+
+
+    <div>
+   <label id="titulo" for="">Título</label>
+    
+   <h2>Usuário: <%= user.firstName +" "+ user.lastName  %></h2>
+   <h2>Você está ouvindo:</h2>
+   <h2>Nº: <%= user.index  %> - <%= user.musica  %></h2>
+
+
+</div>
+
+
+<div>
+
+
+
+<br>
+<a href="/upload"><button>Upload</button></a> 
+<a href="/lista"><button>Minha coleção</button></a> 
+
+
+<!-- <a href="/incrementa"><button>Incrementa</button></a> 
+<a href="/decrementa"><button>Decrementa</button></a>  -->
+
+
+</div>
+
+<button onclick="alert(criarCookie('diaBonito'))">Criar Cookie</button>
+<button onclick="alert(lendoCookie())">Lendo Cookie</button>
+
+<!-- 
+    <script src="server.js"></script>  -->
+
+
+<script>
+    let contPlayPause = 0;
+
+function playPause(){
+     let labelPlayPause = document.getElementById('playPauseBtn')
+        
+     if(contPlayPause == 0){
+        document.getElementById('player').play()
+        labelPlayPause.innerHTML="Pause";
+     }
+
+     if(contPlayPause == 1){
+        document.getElementById('player').pause()
+        labelPlayPause.innerHTML="Play";
+     }
+     contPlayPause ++;
+     
+     if(contPlayPause == 2){
+        contPlayPause = 0;
+     }
+}
+
+
+
+
+let contMudo = 0;
+
+function mudoFunc(){
+     let labelMudo = document.getElementById('mudoBtn')
+        
+     if(contMudo  == 0){
+        document.getElementById('player').muted = true
+        labelMudo.innerHTML="Mudo ON";
+     }
+
+     if(contMudo  == 1){
+        document.getElementById('player').muted = false
+        labelMudo.innerHTML="Mudo OFF";
+     }
+     contMudo  ++;
+     
+     if(contMudo  == 2){
+        contMudo  = 0;
+     }
+}
+
+
+
+
+    function criarCookie(valorCookie){
+     
+//criar um objeto tipo date
+var data = new Date();
+//setando o tempo de vida de um cookie
+data.setTime(data.getTime()+60000);
+
+//criando a estrutura de um cookie
+document.cookie="primeirocookie=" + valorCookie + "; expires="+data.toUTCString()+"; path=/";
+
+return "sucesso!"
+    }
+
+function lendoCookie(){
+// retorna "Chave" e "valor"
+    var valor = document.cookie.split("=")
+
+    //retorna so o valor 
+    return valor[1]
+}
+
+setInterval(function() { 
+    var duracaoMusica = parseInt(document.getElementById('player').duration);
+    var tempoAtual = parseInt(document.getElementById('player').currentTime);
+    
+    var escreve = document.getElementById('titulo').innerHTML=tempoAtual
+ 
+    if(tempoAtual >= duracaoMusica){
+        // chama a proxima musica
+        window.location.href = "/incrementa";
+     
+ }
+
+
+}, 1000);
+
+
+</script>
+
+
+
+</body>
+</html>
+
+

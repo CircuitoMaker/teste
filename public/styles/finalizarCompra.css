@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body{
+    background: linear-gradient(49.5deg, #1B1B2C 57.92%, #3C3C73 89.34%);
+    
+}
+header{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #FFFFFF;
+
+}
+header h1{
+    margin-top: 5rem;
+    margin-left: 0%;
+    font-size: 40px;
+    width: 28rem;
+    height: 3.3rem;
+    text-align: end;
+    font-family: 'Inter';
+    border-bottom: .5rem solid #08F3C9;
+    
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+#inf-pag{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-right: .5rem solid #08f3c9 ;
+
+}
+#inf-pag .dados{
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    height: 40rem;
+    margin: 2rem;
+    align-items: center;
+    
+}
+.pag h1{
+    margin: 2rem;
+    text-align: center;
+}
+.boxs label{
+ font-size: 20px;
+ color: #FFFFFF;
+}
+.boxs .box input{
+display: flex;
+flex-direction: column;
+width: 18rem;
+height: 1.8rem;
+background: #514869;
+box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+margin-bottom: 2rem;
+}
+.termos{
+    display: flex;
+    flex-direction: row;
+}
+.termos h2{
+    color: #FFFFFF;
+    text-align: center;
+}
+.termos a{
+    text-decoration: none;
+    color: #08F3C9;
+}
+.bt-finalizar{
+width: 11rem;
+height: 3rem;
+background: #08F3C9;
+box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+font-size: 19px;
+transition-duration: 1222ms;
+}
+.bt-finalizar:hover{
+    background-color: aqua;
+    width: 45%;
+}
+.formas-pag{
+    display: flex;
+    flex-direction: column;
+}
+.formas-pag img{
+    width: 12rem;   
+}
+.umclick{
+    background-color: #08F3C9;
+    width: 12rem;
+}
+.umclick h4{
+    font-size: 18px;
+    margin-left: 1rem;
+}
+.umclick img {
+    width: 6rem;
+}
+.umclick span{
+font-size: 18px;
+position: fixed;
+bottom: 25rem;
+}
+ 

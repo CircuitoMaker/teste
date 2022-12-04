@@ -1,0 +1,345 @@
+body {
+    background: linear-gradient(49.5deg, #1B1B2C 57.92%, #3C3C73 89.34%);
+}header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: row nowrap;
+    justify-content: space-between;
+    position: fixed ;   
+    height: 13rem;
+    width: 100%;
+    top: 0%;
+    flex-wrap: wrap;
+    background: linear-gradient(49.5deg, #1B1B2C 57.92%, #3C3C73 89.34%);
+    right: 0%;
+  z-index: 100;
+}
+.barra1{
+    width: 46rem;
+    height: 3rem;
+    background-color: #08F3C9;
+    position: fixed;
+    top: 2rem;
+    left: 7rem;
+}
+.banner img{
+    width: 20rem;
+    height: 12rem;
+    position: relative;
+}
+#banner .banner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: row nowrap;
+  
+}
+
+.banner-inf{
+    display: flex;
+    flex-direction: column;
+}
+.banner-inf h1{
+    font-family: 'Kantumruy';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 63px;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+width: 25rem;
+height: 3rem;
+display: flex;
+align-items: center;
+justify-content: center;
+
+position: relative;
+
+}
+.banner-inf h2{
+    color: #08F3C9;
+    position: relative;
+    bottom: 3rem;
+    left: 2rem;
+}
+.banner-inf input{
+    background: #514869;
+box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+width: 9rem;
+height: 1.6rem;
+position: relative;
+bottom: 3.5rem;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+.banner-inf li{
+    list-style: none;
+    position: relative;
+    bottom: 4rem;
+    right: 3.2rem;
+    margin: 1rem;
+}
+.banner-inf a{
+ text-decoration: none;
+ color: black;
+ font-size: 20px;   
+}
+.menu:hover{
+    font-size: 20px;
+    color: #08F3C9;
+}
+ #profile-player{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 25rem;
+ }
+ .profile{
+    display: flex;
+    flex-direction: row;
+ }
+ .profile img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 1rem;
+    
+ }
+ .profile h2{
+    margin: 1rem;
+    font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+position: relative;
+right: 1.5rem;
+bottom: -.1rem;
+ }
+.profile a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;   
+   }
+
+.player{
+    width: 20rem;
+    height: 7rem;
+    background-color: #08F3C9;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+main{
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ width: 150px;
+ position: fixed;
+ top: 22rem
+}
+.caixa1{
+    width: 80rem;
+    height: 3rem;
+    background: #1B1B2C;
+    box-shadow: 0px 4px 4px 6px rgba(0, 0, 0, 0.25);
+    position:relative;
+    bottom: 4rem;
+    left: 15rem;
+}
+main h1{
+    height: 1rem;
+    width: 12rem;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    position: relative;
+    left: 15rem;
+    bottom: 8rem;
+    color: #FFFFFF;
+}
+.caixa2{
+    background-color: #08F3C9;
+    width: 75rem;
+    height: 2rem;
+    position: relative;
+    left: 19rem;
+    bottom: 8rem;
+}
+.caixa3{
+    background-color: #08F3C9;
+    width: 60rem;
+    height: 2rem;
+    position: relative;
+    left: 85rem;
+    bottom: 12rem;
+}
+.caixa4{
+    background: #363665;
+    box-shadow: 0px 4px 4px 6px rgba(0, 0, 0, 0.25);   
+    width: 60rem;
+    height: 3rem;
+    position: relative;
+    left: 85rem;
+    bottom: 12rem;
+}
+.inf-cesta{
+    position: relative;
+    left: 55rem;
+    bottom: 1rem;
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 5rem;
+    height: 1rem;
+}
+.inf-cesta .pro{
+    position: relative;
+    right: 37.7rem;
+    bottom: 2rem;
+
+}
+ .remove{
+    position: relative;
+    right: 9rem;
+    bottom: 3.3rem;
+}
+.preco{
+    position: relative;
+    left: .4rem;
+    bottom: 4.6rem;
+}
+.caixa5{
+    position: fixed;
+    background-color: black;
+    width: 45rem;
+    height: .1rem;
+    left: 19rem;
+    bottom: 24rem;
+    
+}
+#container2{
+    display: flex;
+    flex-direction: row;
+    
+    position: relative;
+    left: 50rem;
+    
+    
+}
+.inf-card{
+    display: flex;
+    flex-direction: row;
+    width: 25rem;
+    height: 10rem;
+    background-color: #514869;
+    position: fixed;
+    left: 20rem;
+}
+.inf-card footer{
+    text-align: justify;
+    color: #FFFFFF;
+    font-size: 22px;
+
+}
+
+.inf-card img{
+ width: 15rem;
+height: 10rem;
+
+}
+.inf-card input{
+    background: #514869;
+box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+width: 4rem;
+height: 2rem;
+margin: 2rem;
+position: relative;
+bottom: 2rem;
+left: 8rem;
+}
+
+.input  input{
+    width: 4rem;
+    height: 2rem;
+}
+.resumo-pedido{
+    display: flex;
+    flex-direction: column;
+    background: #181821;
+    box-shadow: 9px 0px 5px 8px rgba(0, 0, 0, 0.38);
+    width: 30rem;
+    height: 25rem;
+    position: fixed;
+    left: 70rem;
+    bottom: 1rem;
+}
+.inf-card span{
+    margin: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+.resumo-pedido h1{
+ width: 30rem;
+ position: relative;
+ bottom: 1.9rem;
+ left: 0.5rem;
+}
+.caixa6{
+    position: relative;
+    background-color: black;
+    width: 25rem;
+    height: .1rem;
+    left: 2.5rem;
+    bottom: 1rem;
+    
+}
+
+.bt {
+    font-size: 20px;
+    color: #FFFFFF;
+    
+}
+.bt input{
+    background: #514869;
+box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+width: 5rem;
+height: 2rem;
+margin-right: 4rem;
+margin-left: 1rem;
+}
+.bt button{
+    width: 15rem;
+    height: 2.5rem;
+    position: relative;
+    top: 8rem;
+    left: 7.5rem;
+    background: #08F3C9;
+box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+transition: 1400ms;
+}
+.bt label{
+    margin: .5rem;
+}
+.bt a {
+    text-decoration: none;
+    color: #FFFFFF;   
+    font-size: 20px;
+    position: relative;
+    top: 8rem;
+    left: 4.5rem;
+}
+
+.bt button:hover{
+    background-color: #514869;
+}
+

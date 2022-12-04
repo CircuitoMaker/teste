@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Home</title>
+</head>
+<body>
+
+
+
+
+    <header> 
+        <div class="barra1"></div>
+    <section id="banner">
+       
+        <div class="banner"><img src="/img/home-img/hand-1850120 1.png" alt="dj">
+           <div class="banner-inf">
+            <h1>BeatLab</h1>
+            <h2>Your voice to the world!</h2>
+            <input type="text" placeholder="Search">
+        <nav>
+            <ul>
+                <li><a href="/Recentes" class="menu">Recentes</a></li>
+                <li><a href="/Playlist" class="menu">Playlist</a></li>
+            </ul>
+        </nav>
+         </div> </div>
+    </section>
+    <section id="profile-player">
+        <div class="profile">
+            <img src="/img/home-img/pexels-erik-mclean-8517921.jpg" alt="#">
+            <a href="/profile"><h2> <%= user.firstName +" "+ user.lastName  %> </h2></a>
+        </div>
+    
+    
+        
+    
+        <audio id="player" controls="controls" hidden preload="preload" >
+            <source src="/audio" type="audio/ogg">
+        </audio>
+    
+    
+        <div class="player">
+            <img src="/img/player-img/play2.png" alt="">
+            
+          
+            <h5><%= user.index  %> - <%= user.musica  %></h5>
+    
+            <div id="myProgress">
+                <div id="myBar"></div>
+              </div>
+    
+    
+             <div class="botoes">
+            <button onclick="location.href='/decrementa'" type="button"><<</button>     
+            <button id="playPauseBtn" onclick="playPause()">Play</button>     
+            <button onclick="location.href='/incrementa'" type="button">>></button>
+            </div>
+    
+    <label id="timer" for="">0:00</label>
+        
+        </div>
+    
+    </section>
+      </header>
+
+
+
+ 
+
+
+
+
+
+
+  <header id="headerH">
+
+
+
+
+
+    <a id="logo" href="">logo</a>
+
+<nav id="nav">
+    <button aria-label="Abrir Menu"  id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburguer"></span>
+    </button>
+    <ul id="menu" role="menu">
+        <li><a href="/">Login</a></li>
+        <li><a href="/">Quem somos</a></li>
+        <li><a href="/">Contato</a></li>
+    </ul>
+</nav>
+
+</header>
+
+
+
+
+
+
+
+
+  <main>
+    <section class="top">
+        <h1>Top 10 cover da semana </h1>
+        <div class="container-scroll">
+            
+            <div class="card">
+                
+                <img src="/img/home-img/foto2.jpg" alt=""> 
+                
+
+                <footer>
+                <span>musica</span> 
+                <span>nome do artista</span>
+                </footer>
+            </div>
+
+            
+            <div class="card">
+                <img src="/img/home-img/foto3.jpg" alt="">
+                <footer>
+                <span>musica</span> 
+                <span>nome do artista</span>
+                </footer>
+            </div>   <div class="card">
+                <img src="/img/home-img/foto4.jpg" alt="">
+                <footer>
+                <span>musica</span> 
+                <span>nome do artista</span>
+                </footer>
+            </div>   <div class="card">
+                <img src="/img/home-img/foto5.jpg" alt="">
+                <footer>
+                <span>musica</span> 
+                <span>nome do artista</span>
+                </footer>
+            </div>   <div class="card">
+                <img src="/img/home-img/foto6.png" alt="">
+                <footer>
+                <span>musica</span> 
+                <span>nome do artista</span>
+                </footer>
+            </div>   <div class="card">
+                <img src="/img/home-img/foto7.jpg" alt="">
+                <footer>
+                <span>musica</span> 
+                <span>nome do artista</span>
+                </footer>
+            </div>
+            <div class="card">
+                <img src="/img/home-img/foto9.jpg" alt="">
+                <footer>
+                <span>musica</span> 
+                <span>nome do artista</span>
+                </footer>
+            </div>
+        </div>
+    </section>
+    <section id="recentes">
+        <a href="/Recentes"><h1>Ouvidas recentes</h1></a>
+        <div class="container-recentes">
+        <div class="card-recente">
+            <img src="/img/home-img/foto3.jpg" alt="">
+            <footer>
+                <span>musica</span>
+                <span>nome artista</span>
+            </footer>
+            </div><div class="card-recente">
+                <img src="/img/home-img/foto7.jpg" alt="">
+                <footer>
+                    <span>musica</span>
+                    <span>nome artista</span>
+                </footer>
+                </div><div class="card-recente">
+                    <img src="/img/home-img/foto9.jpg" alt="">
+                    <footer>
+                        <span>musica</span>
+                        <span>nome artista</span>
+                    </footer>
+                    </div><div class="card-recente">
+                        <img src="/img/home-img/foto4.jpg" alt="">
+                        <footer>
+                            <span>musica</span>
+                            <span>nome artista</span>
+                        </footer>
+                        </div><div class="card-recente">
+                            <img src="/img/home-img/foto6.png" alt="">
+                            <footer>
+                                <span>musica</span>
+                                <span>nome artista</span>
+                            </footer>
+                            </div>
+        </div>
+    </section>
+    <section id="playlist">
+        <a href="/Playlist"><h1>Playlist</h1></a>
+        <div class="card-playlist">
+            <img src="/img/home-img/foto7.jpg" alt="">
+            <footer>
+                <span>Playlist</span>
+             
+            </footer>
+        </div><div class="card-playlist">
+            <img src="img/home-img/foto2.jpg" alt="">
+            <footer>
+                <span>Playlist</span>
+                
+            </footer>
+        </div><div class="card-playlist">
+            <img src="/img/home-img/foto5.jpg " alt="">
+            <footer>
+                <span>Playlist</span>
+               
+            </footer>
+        </div>
+    </section>
+  </main>
+     
+  
+  <footer>
+    <div class="barra-lateral1"></div>
+    <div class="barra-lateral2"></div>
+    <h1>BeatLab</h1>
+  
+  </footer>  
+  <script src="home2.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Upload</title>
+</head>
+<body>
+
+
+<h1>UPLOAD</h1>
+
+<form method="post" enctype="multipart/form-data" action="/upload">
+
+    <input type="file" name="file" onchange="form.submit()">
+    <!-- <input type="submit" value="upload"> -->
+    <button type="submit">enviar</button>
+    
+
+</form>
+
+<script>
+     const inputFile = document.querySelector("input");
+            const button = document.querySelector("button");
+            const req = new XMLHttpRequest();
+
+            req.upload.addEventListener("progress", function(progress){
+                if ( progress.lengthComputable ){
+                        console.log( Math.floor((progress.loaded * 100) / progress.total) + "%" );
+                }
+            });
+
+    
+   // alert("Músicas recebidas!")
+    </script> 
+
+<a href="/home"><button>Home</button></a> 
+
+
+<!-- 
+  <script src="server.js"></script> -->
+</body>
+</html>

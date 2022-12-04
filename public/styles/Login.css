@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@100&display=swap');
+body{ 
+background-color: #1B1B2C;
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;    
+    color: white;
+ 
+   
+
+   
+}
+
+
+.caixa-login h1{
+    color: #08F3C9;
+    font-family: 'Italiana';
+    font-style: normal;
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+  
+    
+}
+#tela-login{
+    background-color: #3A3359;
+    width: 26.3rem;
+    height: 28.3rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 3px 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 29px;
+    display: flex;
+    flex-direction: column;
+
+    right: 10rem;
+    top: 12rem;
+    position: relative;
+   
+  
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.login label{
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    
+}
+.login input{
+    width: 59%;
+    height: 25px;
+    background-color:  #514869;
+    box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    
+   
+}
+
+
+.bt-login{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 11rem;
+height: 2.3rem;
+background-color: #08F3C9;
+box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25); 
+border-radius: 10px;
+font-size: 25px;
+transition: ALL 450ms;
+
+}
+button:hover{
+    background-color: #514869;
+    filter: brightness(125%);
+
+
+
+}
+
+.caixa-login a {
+display: flex;
+justify-content: center;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+#caixa2{
+width: 26.2rem;
+height: 7rem;
+background: #463C70;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 3px 4px 4px 5px rgba(0, 0, 0, 0.25);
+border-radius: 29px;
+display: flex;
+justify-content: center;
+}
+.registrar  h4{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+  
+
+}
+.registrar h4 a {
+    color: aqua;
+}
+
+
+.registrar button{
+    background-color: #463C70;
+    width: 15rem;
+    height: 2rem;
+    background: #514869;
+    box-shadow: 2px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: 'Arial';
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 80px;
+    position: relative;
+    z-index: 15;
+
+   
+}
+
+
+.banner .caixas .banner1{
+    position: absolute;
+    left: 1rem;
+    bottom: 0px;
+    background: url(hand-1850120.jpg);
+    border-radius: 47px;
+    z-index: 50;
+
+}
+
+.banner .caixas .barra-lateral1{
+    position: absolute;
+    width: 2rem;
+    height: 25rem;
+    left: 12rem;
+    bottom: 3rem;
+    z-index: 10;
+    /* animation: neon 2s alternate infinite reverse; */
+   
+   
+  
+background: #08F3C9;
+}
+.banner .caixas .barra-lateral2{
+    position: absolute;
+    width: 2rem;
+    height: 48rem;
+    left: 5rem;
+    top: 1.2rem;
+    z-index:15;
+    /* animation: neon-barra 150ms alternate infinite ease-in-out; */
+    
+    background: #08F3C9;
+}
+.logo h5 {
+font-family: 'Kantumruy Pro', sans-serif;
+font-style: normal;
+font-size: 35px;
+line-height: 63px;
+text-align: center;
+letter-spacing: 0.2rem;
+position: relative;
+top: 9.5rem;
+left: 7.6rem;
+
+color: #FFFFFF;
+}
+.logo h6{
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+text-align: center;
+letter-spacing: 0.02em;
+position: relative;
+top: 5rem;
+left: 7.6rem;
+
+color: #08F3C9;
+
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 440px){
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 440px){
+    .banner{
+        display: flex;
+        flex-direction: row;
+       position: relative;
+        top: 0rem;
+        
+        left: -10rem;
+    }
+}
+@media screen and (max-width: 440px) {
+    .banner1{
+        width: 179px;
+        height: 124px;
+        top: 0px;
+        position: fixed;
+        border-radius: 1px;
+   
+    }
+}
+@media screen and (max-width: 440px){
+    .barra-lateral3{
+        position: absolute;
+width: 26rem;
+height: 2rem;
+right: -20.9rem;
+top: 2rem;
+
+background: #08F3C9;
+
+
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 440px){
+    .logo h5{
+        font-size: 20px;
+        color: black;
+        position: fixed;
+        
+        left: 14rem;
+        top: -0.6rem;
+       
+    }
+    @media screen and (min-width: 0px) and (max-width: 440px){
+        .logo h6{
+            
+    position: fixed;
+   top: 2.2rem;
+   left: 12.9rem;
+   width: 8rem;
+        }
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 440px){
+    .barra-lateral1{ 
+        display: none;
+}}
+@media screen and (min-width: 0px) and (max-width: 440px){
+    .barra-lateral2{ 
+        display: none;
+}}
+@media screen and (max-width: 440px){
+  #tela-login  {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    position: absolute;
+
+        width: 18rem;
+        height: 19rem;
+        left: 2rem;
+        
+    }
+    @media screen and (max-width: 440px){
+        .login{
+            position: relative;
+            bottom: 2.1rem;
+        }
+}
+@media screen and (max-width: 440px){
+    .login a{
+        font-size: 8px;
+      
+    }
+}
+    @media screen and (max-width: 440px){
+        #caixa2{
+           
+position: absolute;
+width: 18rem;
+height: 4rem;
+bottom: -1rem;
+        }
+    }
+    @media screen and (max-width: 440px){
+        .login label{
+            font-size: 12px;
+         
+           
+        }
+    }
+    @media screen and (min-width: 0px) and (max-width: 440px){
+        .login input{
+            width: 10rem;
+            height: 1.5rem;
+        
+        }
+    }
+    @media screen and (max-width: 440px){
+    .caixa-login h1{
+        font-size: 25px;
+        position: relative;
+        bottom: 1.1rem;
+    }}
+    @media screen and (max-width: 440px){
+        .bt-login{
+            width: 5rem;
+            height: 1.5rem;
+            font-size: 12px;
+        }
+    }
+   
+    @media screen and (max-width: 440px){
+        .registrar h4{
+        font-size: 8px;
+        }
+        }
+        @media screen and (max-width: 440px){
+            .registrar button{
+                width: 10rem;
+                height: 1.5rem;
+                font-size: 10px;
+                
+            }
+        }
+        @media screen and (max-width: 440px){
+            .registrar img{
+                width: 15px;
+            }}

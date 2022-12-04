@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>BeatLab</h1>
+    <h2>Streaming de Audio</h2>
+    
+    <div class="tocador">
+
+        <audio id="player" controls="controls">
+            <source src="/audio" type="audio/ogg">
+        </audio>
+
+
+
+
+    <div class="layoutBtns">
+        <button onclick="document.getElementById('player').play()">Play</button>
+        <button onclick="document.getElementById('player').pause()">Pause</button>
+        <button onclick="document.getElementById('player').volume+=0.1">Vol+</button>
+        <button onclick="document.getElementById('player').volume-=0.1">Vol-</button>
+      </div>
+
+      
+   
+</div>
+
+
+
+    <div>
+   <label id="titulo" for="">Título</label>
+        
+      
+ 
+    
+</div>
+
+
+<div>
+<input type="button" value="Voltar">
+<input type="button" value="Proxima" onclick="mais()" id="mais">
+
+<button onclick="menos()">Voltar</button>
+<button onclick="mais()">Próxima</button>
+
+<a href="/upload">
+    <button>Upload</button>
+  </a> 
+
+
+</div>
+
+    <script src="server.js"></script>
+</body>
+</html>
